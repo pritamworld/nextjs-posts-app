@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Let the `dark:` variant follow the .dark class that ThemeContext sets on <html>,
+   instead of the operating system setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+}
